@@ -3,33 +3,331 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project-Figma-Home-Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            width: {
+              1440: "90rem",
+            },
+
             colors: {
-              clifford: "#da373d",
+              "aw-text-color1": "#2B1B12",
+              "aw-text-color2": "#4F3527",
+              "bg-custom-1": "rgba(221, 199, 187, 1)",
+              "bg-custom-2": "rgba(255, 255, 255, 1)",
+            },
+
+            fontSize: {
+              "custom-1": [
+                "0.875rem",
+                {
+                  lineHeight: "1.066875rem",
+                },
+              ],
+              "custom-2": [
+                "1rem",
+                {
+                  lineHeight: "1.21875rem",
+                },
+              ],
+              "custom-3": [
+                "1rem",
+                {
+                  lineHeight: "1.3rem",
+                },
+              ],
+              "custom-4": [
+                "1.125rem",
+                {
+                  lineHeight: "1.37125rem",
+                },
+              ],
+              "custom-5": [
+                "1.125rem",
+                {
+                  lineHeight: "1.8rem",
+                },
+              ],
+              "custom-6": [
+                "1.25rem",
+                {
+                  lineHeight: "1.52375rem",
+                },
+              ],
+              "custom-7": [
+                "1.375rem",
+                {
+                  lineHeight: "1.67625rem",
+                },
+              ],
+              "custom-8": [
+                "2.5rem",
+                {
+                  lineHeight: "3.5rem",
+                },
+              ],
+            },
+
+            fontFamily: {
+              mont: ["Montserrat", "ui-sans-serif"],
             },
           },
         },
       };
     </script>
+    <title>Project-Figma-Home-Company</title>
   </head>
-  <body>
+  <body style="background-color: green">
     <!-- Yakup -->
 
     <header>
       <!-- Section1 / Yakup-->
     </header>
-    <main>
+    <main style="background-color: green">
       <!-- section2 /Yakup    -->
       <!-- section3 /Yakup    -->
 
       <!-- Andre -->
       <!-- section4 / Andre-->
+      <section class="flex-row font-mont mx-auto w-[1440px] my-[5rem]">
+        <h2 class="text-aw-text-color1 font-bold text-center text-custom-8">
+          Why Choose Us
+        </h2>
+
+        <p
+          class="text-aw-text-color2 font-bold text-center text-custom-5 w-[39rem] mx-auto my-[2rem]"
+        >
+          Elevating Your Home Buying Experience with Expertise, Integrity, and
+          Unmatched Personalized Service
+        </p>
+
+        <div class="flex flex-row justify-around w-[84rem] mx-auto mt-[4rem]">
+          <article
+            class="flex flex-col bg-bg-custom-1 w-[16.5rem] p-6 rounded-2xl"
+          >
+            <div
+              class="block bg-white size-[5rem] align-baseline p-[0.75rem] rounded-lg"
+            >
+              <img class="block size-[3.5rem]" src="./img/map_pin.png" alt="" />
+            </div>
+            <div>
+              <b class="block my-2">Expert Guidance</b>
+              <span class="block my-1"
+                >Benefit from our team's seasoned expertise for a smooth buying
+                experience</span
+              >
+            </div>
+          </article>
+
+          <article
+            class="flex flex-col bg-bg-custom-1 w-[16.5rem] p-6 rounded-2xl"
+          >
+            <div
+              class="block bg-white size-[5rem] align-baseline p-[0.75rem] rounded-lg"
+            >
+              <img class="block size-[3.5rem]" src="./img/service.png" alt="" />
+            </div>
+            <div>
+              <b class="block my-2">Personalized Service</b>
+              <span class="block py-1"
+                >Our services adapt to your unique needs, making your journey
+                stress-free</span
+              >
+            </div>
+          </article>
+
+          <article
+            class="flex flex-col bg-bg-custom-1 w-[16.5rem] p-6 rounded-2xl"
+          >
+            <div
+              class="block bg-white size-[5rem] align-baseline p-[0.75rem] rounded-lg"
+            >
+              <img
+                class="block size-[3.5rem]"
+                src="./img/document.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <b class="block py-2">Transparent Process</b>
+              <span class="block py-1"
+                >Stay informed with our clear and honest approach to buying your
+                home</span
+              >
+            </div>
+          </article>
+          <article
+            class="flex flex-col bg-bg-custom-1 w-[16.5rem] p-6 rounded-2xl"
+          >
+            <div
+              class="block bg-white size-[5rem] align-baseline p-[0.75rem] rounded-lg"
+            >
+              <img
+                class="block size-[3.5rem]"
+                src="./img/handshake.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <b class="block py-2">Exceptional Support</b>
+              <span class="block py-1"
+                >Providing peace of mind with our responsive and attentive
+                customer service</span
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
       <!-- section5 / Andre-->
+
+      <section class="flex-row font-mont mx-auto w-[1440px] my-[5rem]">
+        <h2
+          class="text-aw-text-color1 font-bold text-center text-custom-8 my-[5rem]"
+        >
+          Our Popular Residences
+        </h2>
+
+        <div class="flex flex-row justify-around w-[1400px] mx-auto">
+          <article class="rounded-2xl overflow-hidden bg-bg-custom-1">
+            <div class="h-[33rem]">
+              <div class="h-[23rem]">
+                <img class="w-[100%]" src="./img/house_1.png" alt="" />
+              </div>
+              <div class="p-2">
+                <p class="flex flex-start m-2 my-4">
+                  <img
+                    class="block size-[1.5rem]"
+                    src="./img/map_pin.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 font-bold ml-2"
+                    >San Francisco, California</span
+                  >
+                </p>
+                <p class="flex flex-start m-2 my-4">
+                  <img
+                    class="block size-[1.5rem] bg-white"
+                    src="./img/rooms.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 ml-2">4 Rooms</span>
+                  <img
+                    class="block size-[1.5rem] ml-4 bg-white"
+                    src="./img/size.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 ml-2">3,500 sq ft</span>
+                </p>
+                <p class="flex justify-between">
+                  <a href="" class="block bg-[green] px-4 py-2 rounded-lg"
+                    >Sign up</a
+                  >
+                  <span
+                    class="block bg-[pink] text-custom-7 font-bold text-right v"
+                    >$2,500,000</span
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl overflow-hidden bg-bg-custom-1">
+            <div class="h-[33rem]">
+              <div class="h-[23rem]">
+                <img class="w-[100%]" src="./img/house_2.png" alt="" />
+              </div>
+              <div class="p-2">
+                <p class="flex flex-start m-2">
+                  <img
+                    class="block size-[1.5rem]"
+                    src="./img/map_pin.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 font-bold ml-2"
+                    >Beverly Hills, California</span
+                  >
+                </p>
+                <p class="flex flex-start m-2">
+                  <img
+                    class="block size-[1.5rem] bg-white"
+                    src="./img/rooms.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 ml-2">3 Rooms</span>
+                  <img
+                    class="block size-[1.5rem] ml-4 bg-white"
+                    src="./img/size.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 ml-2">1,500 sq ft</span>
+                </p>
+                <p class="flex justify-between">
+                  <a href="" class="block bg-[green] px-4 py-2 rounded-lg"
+                    >Sign up</a
+                  >
+                  <span
+                    class="block bg-[pink] text-custom-7 font-bold text-right v"
+                    >$850,000</span
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl overflow-hidden bg-bg-custom-1">
+            <div class="h-[33rem]">
+              <div class="h-[23rem]">
+                <img class="w-[100%]" src="./img/house_3.png" alt="" />
+              </div>
+              <div class="p-2">
+                <p class="flex flex-start m-2">
+                  <img
+                    class="block size-[1.5rem]"
+                    src="./img/map_pin.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 font-bold ml-2"
+                    >Palo Alto, California</span
+                  >
+                </p>
+                <p class="flex flex-start m-2">
+                  <img
+                    class="block size-[1.5rem] bg-white"
+                    src="./img/rooms.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 ml-2">6 Rooms</span>
+                  <img
+                    class="block size-[1.5rem] ml-4 bg-white"
+                    src="./img/size.png"
+                    alt=""
+                  />
+                  <span class="text-custom-6 ml-2">4,000 sq ft</span>
+                </p>
+                <p class="flex justify-between">
+                  <a href="" class="block bg-[green] px-4 py-2 rounded-lg"
+                    >Sign up</a
+                  >
+                  <span
+                    class="block bg-[pink] text-custom-7 font-bold text-right v"
+                    >$3,700,000</span
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <!-- section6 / Andre-->
 
       <!-- Bahman -->
