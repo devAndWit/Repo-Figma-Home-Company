@@ -10,7 +10,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              clifford: "#fef8f4",
             },
           },
         },
@@ -21,7 +21,9 @@
     <!-- Yakup -->
 
     <!-- Section1 / Yakup-->
-    <header class="flex items-center justify-between p-4 bg-white shadow-md">
+    <header
+      class="flex items-center justify-between p-4 bg-[#fef8f4] shadow-md"
+    >
       <!-- Logo with image-->
       <div class="flex">
         <img src="src/logo.png" alt="Dwello logo" class="w-93 h-29" />
@@ -62,8 +64,118 @@
     </header>
     <main>
       <!-- section2 /Yakup    -->
-      <!-- section3 /Yakup    -->
+      <section class="relative bg-[#fef8f4]">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-16"
+        >
+          <!-- Left Section -->
+          <div class="space-y-6">
+            <h1 class="text-5xl font-bold text-gray-800 leading-tight">
+              Find Your <br />
+              Dream Home
+            </h1>
+            <p class="text-lg text-gray-600">
+              Explore our curated selection of exquisite properties meticulously
+              tailored to your unique dream home vision.
+            </p>
+            <button
+              class="px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700"
+            >
+              Sign up
+            </button>
+          </div>
+          <!-- Right Section -->
+          <div class="relative">
+            <img src="src/home.png" alt="Dream Home" />
+            <img
+              src="src/eraser.png"
+              alt="House Example"
+              class="absolute top-[64%] left-[4%] transform -translate-x-[30%] -translate-y-[25%] w-64 h-32"
+            />
+          </div>
+        </div>
 
+        <!-- Floating Search Form -->
+        <div
+          class="absolute left-[50%] -translate-x-[50%] top-full -mt-12 bg-white shadow-lg rounded-lg px-6 py-4 w-4/5 md:w-3/5"
+        >
+          <form class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <!-- Location -->
+            <div class="flex items-center border rounded-md px-3 py-2">
+              <input
+                type="text"
+                placeholder="Location"
+                class="w-full focus:outline-none text-gray-600"
+              />
+            </div>
+            <!-- Type -->
+            <div class="flex items-center border rounded-md px-3 py-2">
+              <input
+                type="text"
+                placeholder="Type"
+                class="w-full focus:outline-none text-gray-600"
+              />
+            </div>
+            <!-- Price Range -->
+            <div class="flex items-center border rounded-md px-3 py-2">
+              <input
+                type="text"
+                placeholder="Price Range"
+                class="w-full focus:outline-none text-gray-600"
+              />
+            </div>
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="px-6 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-700"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- section3 /Yakup    -->
+      <section class="bg-white py-16 px-16">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4"
+        >
+          <!-- Left: Image -->
+          <div>
+            <img
+              src="src/villa.jpg"
+              alt="House Example"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <!-- Right: Text Content -->
+          <div class="space-y-6">
+            <h2 class="text-4xl font-bold text-gray-800">
+              We Help You To Find Your Dream Home
+            </h2>
+            <p class="text-lg text-gray-600">
+              From cozy cottages to luxurious estates, our dedicated team guides
+              you through every step of the journey, ensuring your dream home
+              becomes a reality.
+            </p>
+            <!-- Stats -->
+            <div class="flex space-x-8">
+              <div class="text-center">
+                <p class="text-3xl font-bold text-gray-800">8K+</p>
+                <p class="text-gray-500">Houses Available</p>
+              </div>
+              <div class="text-center">
+                <p class="text-3xl font-bold text-gray-800">6K+</p>
+                <p class="text-gray-500">Houses Sold</p>
+              </div>
+              <div class="text-center">
+                <p class="text-3xl font-bold text-gray-800">2K+</p>
+                <p class="text-gray-500">Trusted Agents</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Andre -->
       <!-- section4 / Andre-->
       <!-- section5 / Andre-->
