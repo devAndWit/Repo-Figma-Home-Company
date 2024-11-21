@@ -3,25 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project-Figma-Home-Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            width: {
+              1440: "90rem",
+            },
+
             colors: {
-              clifford: "#da373d",
-              Capuccino: "#ddc7bb",
-              Zbrown: "#2B1B12",
-              brown: "#4F3527",
-              darkbrown: "#543E32"
+              "aw-color-1": "#2B1B12",
+              "aw-color-2": "#4F3527",
+              "aw-color-3": "rgba(221, 199, 187, 1)", // lightbrown
+              "aw-color-4": "rgba(251, 245, 241, 1)",
+              "aw-color-5": "rgba(79, 53, 39, 1)",
+              "aw-color-6": "#fef7f2",
+            },
 
+            fontSize: {
+              "aw-size-1": [
+                "0.875rem",
+                {
+                  lineHeight: "1.066875rem",
+                },
+              ],
+              "aw-size-2": [
+                "1rem",
+                {
+                  lineHeight: "1.21875rem",
+                },
+              ],
+              "aw-size-3": [
+                "1rem",
+                {
+                  lineHeight: "1.3rem",
+                },
+              ],
+              "aw-size-4": [
+                "1.125rem",
+                {
+                  lineHeight: "1.37125rem",
+                },
+              ],
+              "aw-size-5": [
+                "1.125rem",
+                {
+                  lineHeight: "1.8rem",
+                },
+              ],
+              "aw-size-6": [
+                "1.25rem",
+                {
+                  lineHeight: "1.52375rem",
+                },
+              ],
+              "aw-size-7": [
+                "1.375rem",
+                {
+                  lineHeight: "1.67625rem",
+                },
+              ],
+              "aw-size-8": [
+                "2.5rem",
+                {
+                  lineHeight: "3.5rem",
+                },
+              ],
+            },
 
+            fontFamily: {
+              mont: ["Montserrat", "ui-sans-serif"],
             },
           },
         },
       };
     </script>
+    <title>Project-Figma-Home-Company</title>
   </head>
   <body>
     <!-- Yakup -->
@@ -35,8 +99,439 @@
 
       <!-- Andre -->
       <!-- section4 / Andre-->
+      <section class="flex-row font-mont mx-auto w-[1440px] my-[5rem]">
+        <h2 class="text-aw-color-1 font-bold text-center text-aw-size-8">
+          Why Choose Us
+        </h2>
+
+        <p
+          class="text-aw-color-2 font-bold text-center text-aw-size-5 w-[39rem] mx-auto my-[2rem]"
+        >
+          Elevating Your Home Buying Experience with Expertise, Integrity, and
+          Unmatched Personalized Service
+        </p>
+
+        <div class="flex flex-row justify-around w-[84rem] mx-auto mt-[4rem]">
+          <article
+            class="flex flex-col bg-aw-color-3 w-[16.5rem] p-6 rounded-2xl shadow-md"
+          >
+            <div
+              class="block size-[5rem] align-baseline p-[0.75rem] rounded-lg bg-aw-color-4"
+            >
+              <img class="block size-[3.5rem]" src="./img/map_pin.png" alt="" />
+            </div>
+            <div>
+              <b class="block mb-2 mt-6 text-aw-color-2">Expert Guidance</b>
+              <span class="block my-1 text-aw-color-5 font-semibold"
+                >Benefit from our team's seasoned expertise for a smooth buying
+                experience</span
+              >
+            </div>
+          </article>
+
+          <article
+            class="flex flex-col bg-aw-color-3 w-[16.5rem] p-6 rounded-2xl shadow-md"
+          >
+            <div
+              class="block size-[5rem] align-baseline p-[0.75rem] rounded-lg bg-aw-color-4"
+            >
+              <img class="block size-[3.5rem]" src="./img/service.png" alt="" />
+            </div>
+            <div>
+              <b class="block mb-2 mt-6 text-aw-color-2"
+                >Personalized Service</b
+              >
+              <span class="block my-1 text-aw-color-5 font-semibold"
+                >Our services adapt to your unique needs, making your journey
+                stress-free</span
+              >
+            </div>
+          </article>
+
+          <article
+            class="flex flex-col bg-aw-color-3 w-[16.5rem] p-6 rounded-2xl shadow-md"
+          >
+            <div
+              class="block size-[5rem] align-baseline p-[0.75rem] rounded-lg bg-aw-color-4"
+            >
+              <img
+                class="block size-[3.5rem]"
+                src="./img/document.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <b class="block mb-2 mt-6 text-aw-color-2">Transparent Process</b>
+              <span class="block my-1 text-aw-color-5 font-semibold"
+                >Stay informed with our clear and honest approach to buying your
+                home</span
+              >
+            </div>
+          </article>
+          <article
+            class="flex flex-col bg-aw-color-3 w-[16.5rem] p-6 rounded-2xl shadow-md"
+          >
+            <div
+              class="block size-[5rem] align-baseline p-[0.75rem] rounded-lg bg-aw-color-4"
+            >
+              <img
+                class="block size-[3.5rem]"
+                src="./img/handshake.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <b class="block mb-2 mt-6 text-aw-color-2">Exceptional Support</b>
+              <span class="block my-1 text-aw-color-5 font-semibold"
+                >Providing peace of mind with our responsive and attentive
+                customer service</span
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
       <!-- section5 / Andre-->
+
+      <section class="flex-row font-mont mx-auto w-[1440px] my-[5rem]">
+        <h2
+          class="text-aw-color-1 font-bold text-center text-aw-size-8 my-[5rem] text-aw-color-1"
+        >
+          Our Popular Residences
+        </h2>
+
+        <div class="flex flex-row justify-around w-[1400px] mx-auto">
+          <article class="rounded-2xl overflow-hidden bg-aw-color-3 shadow-md">
+            <div class="h-[33rem]">
+              <div class="h-[23rem]">
+                <img class="w-[100%]" src="./img/house_1.png" alt="" />
+              </div>
+              <div class="p-2">
+                <p class="flex flex-start m-2 my-4">
+                  <img
+                    class="block size-[1.5rem]"
+                    src="./img/location.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 font-bold ml-2 text-aw-color-1"
+                    >San Francisco, California</span
+                  >
+                </p>
+                <p class="flex flex-start m-2 my-4">
+                  <img
+                    class="block size-[1.5rem] bg-white rounded"
+                    src="./img/rooms.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 ml-2">4 Rooms</span>
+                  <img
+                    class="block size-[1.5rem] ml-4 bg-white rounded"
+                    src="./img/size.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 ml-2">3,500 sq ft</span>
+                </p>
+                <p class="flex justify-between">
+                  <a
+                    href=""
+                    class="block px-4 py-2 rounded-lg ml-2 bg-aw-color-1 text-white"
+                  >
+                    Sign up</a
+                  >
+                  <span
+                    class="block text-aw-size-7 font-bold text-right self-end m-2"
+                    >$2,500,000</span
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl overflow-hidden bg-aw-color-3 shadow-md">
+            <div class="h-[33rem]">
+              <div class="h-[23rem]">
+                <img class="w-[100%]" src="./img/house_2.png" alt="" />
+              </div>
+              <div class="p-2">
+                <p class="flex flex-start m-2 my-4">
+                  <img
+                    class="block size-[1.5rem]"
+                    src="./img/location.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 font-bold ml-2 text-aw-color-1"
+                    >Beverly Hills, California</span
+                  >
+                </p>
+                <p class="flex flex-start m-2 my-4">
+                  <img
+                    class="block size-[1.5rem] bg-white rounded"
+                    src="./img/rooms.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 ml-2">3 Rooms</span>
+                  <img
+                    class="block size-[1.5rem] ml-4 bg-white rounded"
+                    src="./img/size.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 ml-2">1,500 sq ft</span>
+                </p>
+                <p class="flex justify-between">
+                  <a
+                    href=""
+                    class="block px-4 py-2 rounded-lg ml-2 bg-aw-color-1 text-white"
+                  >
+                    Sign up</a
+                  >
+                  <span
+                    class="block text-aw-size-7 font-bold text-right self-end m-2"
+                    >$850,000</span
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl overflow-hidden bg-aw-color-3 shadow-md">
+            <div class="h-[33rem]">
+              <div class="h-[23rem]">
+                <img class="w-[100%]" src="./img/house_3.png" alt="" />
+              </div>
+              <div class="p-2">
+                <p class="flex flex-start m-2 my-4">
+                  <img
+                    class="block size-[1.5rem]"
+                    src="./img/location.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 font-bold ml-2 text-aw-color-1"
+                    >Palo Alto, California</span
+                  >
+                </p>
+                <p class="flex flex-start m-2 my-4">
+                  <img
+                    class="block size-[1.5rem] bg-white rounded"
+                    src="./img/rooms.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 ml-2">6 Rooms</span>
+                  <img
+                    class="block size-[1.5rem] ml-4 bg-white rounded"
+                    src="./img/size.png"
+                    alt=""
+                  />
+                  <span class="text-aw-size-6 ml-2">4,000 sq ft</span>
+                </p>
+                <p class="flex justify-between">
+                  <a
+                    href=""
+                    class="block px-4 py-2 rounded-lg ml-2 bg-aw-color-1 text-white"
+                    >Sign up</a
+                  >
+                  <span
+                    class="block text-aw-size-7 font-bold text-right self-end m-2"
+                    >$3,700,000</span
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <!-- section6 / Andre-->
+      <section
+        class="flex-row font-mont mx-auto w-[1440px] mt-[7rem] pt-4 bg-aw-color-6"
+      >
+        <h2
+          class="text-aw-color-1 font-bold text-center text-aw-size-8 my-[5rem]"
+        >
+          What People Say<br />About Dwello
+        </h2>
+
+        <div class="flex flex-row justify-around w-[1400px] mx-auto">
+          <article class="rounded-2xl overflow-hidden bg-aw-color-3">
+            <div class="h-[26rem] w-[24rem]">
+              <div class="h-[10rem]">
+                <img
+                  class="block w-[100%] h-[10rem]"
+                  src="./img/room_1.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-3">
+                <div class="flex flex-row my-3 mx-2">
+                  <div class="w-[4rem]">
+                    <img
+                      class="block rounded-full w-[100%]"
+                      src="./img/customer_1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex flex-col w-[13rem] mx-2">
+                    <span class="block font-bold text-aw-size-6 text-aw-color-1"
+                      >Sarah Nguyen</span
+                    >
+                    <span
+                      class="block font-bold text-aw-size-2 my-2 text-aw-color-1"
+                      >San Francisco</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex flex-row bg-white justify-center w-[4rem] h-[2rem] py-2 rounded self-center"
+                  >
+                    <img class="block h-[1rem]" src="./img/star.png" alt="" />
+                    <span class="block text-aw-size-2 px-1 font-semibold"
+                      >5.0</span
+                    >
+                  </div>
+                </div>
+                <p class="m-2 my-4 w-[21rem] font-semibold text-aw-color-2">
+                  Dwello truly cares about their clients. They listened to my
+                  needs and preferences and helped me find the perfect home in
+                  the Bay Area. Their professionalism and attention to detail
+                  are unmatched.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl overflow-hidden bg-aw-color-3">
+            <div class="h-[26rem] w-[24rem]">
+              <div class="h-[10rem]">
+                <img
+                  class="block w-[100%] h-[10rem]"
+                  src="./img/room_2.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-3">
+                <div class="flex flex-row my-3 mx-2">
+                  <div class="w-[4rem]">
+                    <img
+                      class="block rounded-full w-[100%]"
+                      src="./img/customer_2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex flex-col w-[13rem] mx-2">
+                    <span class="block font-bold text-aw-size-6 text-aw-color-1"
+                      >Michael Rodriguez</span
+                    >
+                    <span
+                      class="block font-bold text-aw-size-2 my-2 text-aw-color-1"
+                      >San Diego</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex flex-row bg-white justify-center w-[4rem] h-[2rem] py-2 rounded self-center"
+                  >
+                    <img class="block h-[1rem]" src="./img/star.png" alt="" />
+                    <span class="block text-aw-size-2 px-1 font-semibold"
+                      >4.5</span
+                    >
+                  </div>
+                </div>
+                <p class="m-2 my-4 w-[21rem] font-semibold text-aw-color-2">
+                  I had a fantastic experience working with Dwello. Their
+                  expertise and personalized service exceeded my expectations. I
+                  found my dream home quickly and smoothly. Highly recommended!
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl overflow-hidden bg-aw-color-3">
+            <div class="h-[26rem] w-[24rem]">
+              <div class="h-[10rem]">
+                <img
+                  class="block w-[100%] h-[10rem]"
+                  src="./img/room_3.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-3">
+                <div class="flex flex-row my-3 mx-2">
+                  <div class="w-[4rem]">
+                    <img
+                      class="block rounded-full w-[100%]"
+                      src="./img/customer_3.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex flex-col w-[13rem] mx-2">
+                    <span class="block font-bold text-aw-size-6 text-aw-color-1"
+                      >Emily Johnson</span
+                    >
+                    <span
+                      class="block font-bold text-aw-size-2 my-2 text-aw-color-1"
+                      >Los Angeles</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex flex-row bg-white justify-center w-[4rem] h-[2rem] py-2 rounded self-center"
+                  >
+                    <img class="block h-[1rem]" src="./img/star.png" alt="" />
+                    <span class="block text-aw-size-2 px-1 font-semibold"
+                      >4.5</span
+                    >
+                  </div>
+                </div>
+                <p class="m-2 my-4 w-[21rem] font-semibold text-aw-color-2">
+                  Dwello made my dream of owning a home a reality! Their team
+                  provided exceptional support and guided me through every step
+                  of the process. I couldn't be happier with my new home!
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="block mt-[3rem]">
+          <div class="flex justify-center gap-[2rem]">
+            <button
+              style="display: block; width: 58px; height: 58px"
+              class="rounded-full bg-aw-color-1"
+            >
+              <span
+                style="
+                  display: block;
+                  width: 1rem;
+                  height: 1rem;
+                  border-top: 2px white solid;
+                  border-left: 2px white solid;
+                  transform: rotate(-45deg);
+                  margin-left: 1.5rem;
+                "
+                >&nbsp;
+              </span>
+            </button>
+            <button
+              style="display: block; width: 58px; height: 58px"
+              class="rounded-full bg-aw-color-1"
+            >
+              <span
+                style="
+                  display: block;
+                  width: 1rem;
+                  height: 1rem;
+                  border-top: 2px white solid;
+                  border-left: 2px white solid;
+                  transform: rotate(135deg);
+                  margin-left: 1.125rem;
+                "
+                >&nbsp;
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
 
       <!-- Bahman -->
       <!-- section7 / Bahman -->
