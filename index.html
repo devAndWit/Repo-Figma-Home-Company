@@ -19,12 +19,18 @@
             },
 
             colors: {
+              clifford_y: "#fef8f4",
+              clifford_b: "#da373d",
               "aw-color-1": "#2B1B12",
               "aw-color-2": "#4F3527",
               "aw-color-3": "rgba(221, 199, 187, 1)", // lightbrown
               "aw-color-4": "rgba(251, 245, 241, 1)",
               "aw-color-5": "rgba(79, 53, 39, 1)",
               "aw-color-6": "#fef7f2",
+              Capuccino: "#ddc7bb",
+              Zbrown: "#2B1B12",
+              brown: "#4F3527",
+              darkbrown: "#543E32",
             },
 
             fontSize: {
@@ -90,13 +96,167 @@
   <body>
     <!-- Yakup -->
 
-    <header>
-      <!-- Section1 / Yakup-->
+    <!-- Section1 / Yakup-->
+    <header class="shadow-md bg-[#fef8f4]">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between py-4 px-[4rem]"
+      >
+        <!-- Logo with image-->
+        <div class="flex">
+          <img src="src/logo.png" alt="Dwello logo" class="w-93 h-29" />
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex-initial w-700 space-x-8 font-bold text-sm text-Zbrown">
+          <a href="#" class="text-Zbrown hover:text-blue-500">Home</a>
+          <a href="#" class="text-Zbrown hover:text-blue-500">Service</a>
+          <a href="#" class="text-Zbrown hover:text-blue-500">Agents</a>
+          <a href="#" class="text-Zbrown hover:text-blue-500">Contact</a>
+        </nav>
+
+        <!-- Icons and Button -->
+        <div class="flex items-center space-x-4">
+          <!-- Search Icon -->
+          <button class="w-5 h-auto text-gray-600 hover:text-blue-500">
+            <img
+              src="src/SearchVector.png"
+              alt="Search Icon"
+              class="w-24 h-auto"
+            />
+          </button>
+
+          <!-- User Icon -->
+          <button class="w-6 h-6">
+            <img src="src/user.svg" alt="Search Icon" class="w-24 h-auto" />
+          </button>
+
+          <!-- Sign up Button -->
+          <a
+            href="#"
+            class="px-4 py-2 text-white rounded-md bg-Zbrown hover:bg-gray-800"
+          >
+            Sign up
+          </a>
+        </div>
+      </div>
     </header>
     <main>
       <!-- section2 /Yakup    -->
-      <!-- section3 /Yakup    -->
+      <section class="relative bg-[#fef8f4] text-brown">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-16"
+        >
+          <!-- Left Section -->
+          <div class="space-y-6">
+            <h1 class="text-5xl font-bold text-brown leading-tight">
+              Find Your <br />
+              Dream Home
+            </h1>
+            <p class="text-lg font-semibold">
+              Explore our curated selection of exquisite properties meticulously
+              tailored to your unique dream home vision.
+            </p>
+            <button
+              class="px-6 py-3 bg-Zbrown text-white rounded-md hover:bg-gray-700"
+            >
+              Sign up
+            </button>
+          </div>
+          <!-- Right Section -->
+          <div class="relative">
+            <img src="src/home.png" alt="Dream Home" />
+            <img
+              src="src/eraser.png"
+              alt="House Example"
+              class="absolute top-[64%] left-[4%] transform -translate-x-[30%] -translate-y-[25%] w-64 h-32"
+            />
+          </div>
+        </div>
 
+        <!-- Floating Search Form -->
+        <div
+          class="absolute left-[50%] -translate-x-[50%] top-full -mt-16 top-full bg-[#ddc7bb] shadow-lg rounded-lg px-6 py-8 w-4/5 md:w-3/5"
+        >
+          <form
+            class="grid grid-cols-1 md:grid-cols-4 gap-4 text-[18px] lh-[22px]"
+          >
+            <!-- Location -->
+
+            <div class="flex items-center">
+              <input
+                type="text"
+                placeholder="Location"
+                class="block p-[1rem] rounded-md w-full focus:outline-none placeholder:text-brown"
+              />
+            </div>
+            <!-- Type -->
+            <div class="flex items-center">
+              <input
+                type="text"
+                placeholder="Type"
+                class="block p-[1rem] rounded-md w-full focus:outline-none placeholder:text-brown"
+              />
+            </div>
+            <!-- Price Range -->
+            <div class="flex items-center">
+              <input
+                type="text"
+                placeholder="Price Range"
+                class="block p-[1rem] rounded-md w-full focus:outline-none placeholder:text-brown"
+              />
+            </div>
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="px-6 py-3 bg-Zbrown text-white rounded-md hover:bg-gray-700"
+            >
+              Sign up
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- section3 /Yakup    -->
+      <section class="bg-white py-16 pt-40 px-16 text-Zbrown">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4"
+        >
+          <!-- Left: Image -->
+          <div>
+            <img
+              src="src/villa.jpg"
+              alt="House Example"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <!-- Right: Text Content -->
+          <div class="space-y-6">
+            <h2 class="text-4xl font-bold text-Zbrown">
+              We Help You To Find Your Dream Home
+            </h2>
+            <p class="text-lg text-Zbrown font-semibold">
+              From cozy cottages to luxurious estates, our dedicated team guides
+              you through every step of the journey, ensuring your dream home
+              becomes a reality.
+            </p>
+            <!-- Stats -->
+            <div class="flex space-x-8">
+              <div class="text-center">
+                <p class="text-3xl font-bold text-Zbrown">8K+</p>
+                <p class="text-Zbrown">Houses Available</p>
+              </div>
+              <div class="text-center">
+                <p class="text-3xl font-bold text-Zbrown">6K+</p>
+                <p class="text-Zbrown">Houses Sold</p>
+              </div>
+              <div class="text-center">
+                <p class="text-3xl font-bold text-Zbrown">2K+</p>
+                <p class="text-Zbrown">Trusted Agents</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Andre -->
       <!-- section4 / Andre-->
       <section class="flex-row font-mont mx-auto w-[1440px] my-[5rem]">
@@ -342,10 +502,10 @@
 
       <!-- section6 / Andre-->
       <section
-        class="flex-row font-mont mx-auto w-[1440px] mt-[7rem] pt-4 bg-aw-color-6"
+        class="flex-row font-mont mx-auto mt-[7rem] pt-4 pb-[1rem] bg-aw-color-6"
       >
         <h2
-          class="text-aw-color-1 font-bold text-center text-aw-size-8 my-[5rem]"
+          class="text-aw-color-1 font-bold text-center text-aw-size-8 my-[3rem]"
         >
           What People Say<br />About Dwello
         </h2>
@@ -493,7 +653,7 @@
             </div>
           </article>
         </div>
-        <div class="block mt-[3rem]">
+        <div class="block my-[3rem]">
           <div class="flex justify-center gap-[2rem]">
             <button
               style="display: block; width: 58px; height: 58px"
@@ -535,10 +695,164 @@
 
       <!-- Bahman -->
       <!-- section7 / Bahman -->
+      <div class="mt-[8rem] mb-40 font-mont">
+        <p
+          class="font-mont text-Zbrown text-3xl width-500 leading-9 flex justify-center font-extrabold"
+        >
+          Do You Have Any Questions?
+        </p>
+        <p
+          class="font-mont text-Zbrown text-3xl flex justify-center font-extrabold"
+        >
+          Get Help From Us
+        </p>
+
+        <div class="flex justify-center gap-14">
+          <p
+            class="flex justify-center text-sm font-bold py-12 gap-2 text-Zbrown"
+          >
+            <svg
+              class="size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 
+              0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043
+                3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1
+                3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 
+                3.745 0 0 1 21 12Z"
+              />
+            </svg>
+            Chat live with our support team
+          </p>
+          <p class="flex py-12 text-sm font-bold gap-2 text-Zbrown">
+            <svg
+              class="size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745
+                  0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043
+                  3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 
+                  3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 
+                  3.745 0 0 1 21 12Z"
+              />
+            </svg>
+            Browse our FAQ
+          </p>
+        </div>
+
+        <div class="flex justify-center">
+          <form action="" class="flex space-x-6">
+            <div class="relativ">
+              <div class="absolute py-3 pl-4">
+                <img src="./Image/email.png" alt="" />
+              </div>
+              <div>
+                <input
+                  class="block bg-Capuccino w-[25rem] pl-12 py-3 rounded-md placeholder:text-brown"
+                  type="email"
+                  placeholder="Enter your email address..."
+                />
+              </div>
+            </div>
+            <button class="bg-Zbrown text-white w-36 rounded-md">Submit</button>
+          </form>
+        </div>
+      </div>
     </main>
 
+    <!-- section8 / Bahman -->
     <footer>
-      <!-- section8 / Bahman -->
+      <div class="font-mont bg-Capuccino flex justify-center py-14 text-braun">
+        <div class="grid grid-cols-5 space-x-14">
+          <div class="mb-5 mr-8">
+            <img src="./Image/logo.png" alt="" class="" />
+            <div class="mb-5 py-4 text-xs font-bold text-brown">
+              <p>
+                Bringing you closer to<br />your dream home, one<br />click at a
+                time.
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <h1 class="font-extrabold text-Zbrown">About</h1>
+            <div class="text-sm font-bold">
+              <ul class="py-6 text-brown">
+                <li class="pb-4">Our Story</li>
+                <li class="pb-4">Carrers</li>
+                <li class="pb-4">Our Team</li>
+                <li class="pb-4">Resources</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <h1 class="font-extrabold text-Zbrown">Support</h1>
+            <div class="text-sm font-bold">
+              <ul class="py-6 text-brown">
+                <li class="pb-4">FAQ</li>
+                <li class="pb-4">Contact Us</li>
+                <li class="pb-4">Help Center</li>
+                <li class="pb-4">Terms of Service</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <h1 class="font-extrabold text-Zbrown">Find Us</h1>
+            <div class="text-sm font-bold">
+              <ul class="py-6 text-brown">
+                <li class="pb-4">Events</li>
+                <li class="pb-4">Locations</li>
+                <li class="pb-4">Newsletter</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <h1 class="font-extrabold text-Zbrown">Our Social</h1>
+            <div class="text-sm font-bold">
+              <ul class="py-6 text-brown">
+                <li class="gap-2 pb-4 flex">
+                  <img
+                    src="./Image/instagram.png"
+                    alt=""
+                    class="w-6 size-2/3"
+                  />Instagram
+                </li>
+                <li class="gap-2 pb-4 px-1 flex">
+                  <img
+                    src="./Image/Vector.png"
+                    alt=""
+                    class="w-4 size-2/3"
+                  />Facebook
+                </li>
+                <li class="gap-2 pb-4 flex">
+                  <img
+                    src="./Image/twitterx.png"
+                    alt=""
+                    class="w-6 size-2/3"
+                  />Twitter(x)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
